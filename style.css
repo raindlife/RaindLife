@@ -1,0 +1,111 @@
+
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background-color: #fff;
+  color: #000;
+  text-align: center;
+}
+
+header {
+  padding: 20px;
+  background-color: #000;
+}
+
+.logo {
+  width: 200px;
+}
+
+main {
+  padding: 40px 20px;
+}
+
+.product-layout {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+@media (min-width: 768px) {
+  .product-layout {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  .product-info, .order-form {
+    flex: 1;
+  }
+
+  .product-info {
+    margin-right: 20px;
+  }
+
+  .order-form {
+    margin-left: 20px;
+  }
+}
+
+.product-info {
+  text-align: left;
+}
+
+.shirt-img {
+  width: 100%;
+  max-width: 300px;
+  margin-top: 20px;
+  border: 2px solid #00cfff;
+  border-radius: 10px;
+}
+
+.price {
+  font-size: 1.2em;
+  margin: 20px 0;
+  font-weight: bold;
+}
+
+.order-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.order-form input,
+.order-form select,
+.order-form textarea,
+.order-form button {
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 1em;
+}
+
+.order-form textarea {
+  resize: vertical;
+}
+
+.order-form button {
+  background-color: #00cfff;
+  color: #000;
+  font-weight: bold;
+  cursor: pointer;
+  border: none;
+}
+
+footer {
+  margin-top: 40px;
+  padding: 20px;
+  font-size: 0.9em;
+}
+
+.cart {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  font-size: 1.2em;
+  color: white;
+}
